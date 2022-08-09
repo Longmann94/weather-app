@@ -16,7 +16,7 @@ async function getWeather() {
       mode: 'cors'
     });
     const weather = await getWeather.json();
-    weatherDisplay.textContent = `The weather in ${location} today is ${weather.main.temp} with Min: ${weather.main.temp_min} Max: ${weather.main.temp_max}, currently it feels like ${weather.main.feels_like} 'C'`;
+    weatherDisplay.textContent = `The weather in ${location} today is ${weather.main.temp}C with Min: ${weather.main.temp_min}C Max: ${weather.main.temp_max}C, currently it feels like ${weather.main.feels_like}C`;
     weatherImage.textContent = `It's `
     const img = document.createElement('img');
     img.src = `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
