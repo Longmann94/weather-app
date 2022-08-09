@@ -3,5 +3,22 @@ body{
 }
 
 .main-container{
+  display: grid;
+  grid-template: repeat(3, 1fr) / 1fr;
+  font-size: 1.5rem;
+  gap: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
 
+.main-container input{
+  font-size: 2rem;
+}
+
+.main-container button{
+  font-size: 2rem;
+}
+
+.weather-container{
+  font-size: 3rem;
 }
