@@ -8,7 +8,7 @@ async function getWeather() {
 
   try {
     const location = searchBox.value;
-    const getLocation = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=abc106e80842a4cdbc0191c41514e752`, {
+    const getLocation = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=abc106e80842a4cdbc0191c41514e752`, {
       mode: 'cors'
     });
     const locationName = await getLocation.json();
